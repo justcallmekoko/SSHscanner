@@ -7,11 +7,20 @@ Saves to vuln list
 
 Dependencies: paramiko
 
-Usage: python SSHscanner.py threads range octets timeout
+# Setup(assuming you have a basic understanding of python and linux command line)
 
-# Setup
+Copy SSHScanner.py to any location on your linux file system
 
 pip install paramiko
+
+# Usage(from the location of SSHScanner.py)
+
+python SSHScanner.py <threads> <range> <octets> <timeout>
+
+threads(integer 1 - 4000) - How many scanning threads to run at once
+range(A, B, C) - How many IP octets will be specified
+octets(IP octets) - Set default address for the specified octet range
+timeout(integer 1 - inf) - Specify wait time for SSH connection
 
 # DISCLAIMER
 
