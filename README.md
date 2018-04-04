@@ -1,6 +1,10 @@
 # SSHscanner
 botnet scanner written in python
 
+### Donate
+  - Bitcoin: 1DGyJxWY4AWCbjMQptc3fSkdnf4e71BCX9
+  - Ethereum: 0x019e2AC0ffEFD6eC62b464487d2434bc57C6F9ae
+
 SSH scanner which runs a bruteforce attack with known default login credentials
 
 Saves to vuln list
